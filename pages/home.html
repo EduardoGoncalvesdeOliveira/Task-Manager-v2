@@ -13,60 +13,101 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="../img/iconFoto.jpg" alt="">
-            <p>Professor Vitor</p>
+    <section class="task-container">
+        <div class="add-task">
+            <button>
+                <p>Add task</p>
+                <i class="bi bi-plus-lg"></i>
+            </button>
         </div>
-        <menu>
-           <section class="card-conteiner">
-                <div class="card">
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-github"></i>
-                    <p>Julia Paiva</p>
-                </div>
-                <div class="card">
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-github"></i>
-                    <p>Yasmin Targino</p>
-                </div>
-                <div class="card">
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-github"></i>
-                    <p>Eduardo </p>
-                </div>
-           </section>
-        </menu>
-    </header>
-    <main>
 
-        <section class="task-conteiner">
-            
-            <div class="task-card">
-                <section class="section1">
-                    <div class="part1">
-                        <h1>01</h1>
+        <div class="task">
+
+            <div class="card">
+                <div class="pt1">
+                    <h1>01</h1>
+                </div>
+                <div class="pt2">
+                    <div class="pt2-content">
+                        <h2>Tarefa Titulo</h2>
+                        <p>20/07</p>
                     </div>
-                   <div>
-                        <div class="part2">
-                            <h2>Tarefa titulo</h2>
-                            <h3>20/04</h3>
-                        </div>
-                        <div class="part3">
-                            <p>Descriçãooooooooooooo</p>
-                        </div>
-                   </div>
-                </section>
-                <section class="section2">
-                    <input type="checkbox"> <input>
+                    <p>Tarefa um foda top amo muito essa trefa</p>
+                </div>
+                <div class="pt3">
+                     <label>
+                        <input type="checkbox" class="option-input checkbox" checked />
+                      </label>
                     <i class="bi bi-pencil-square"></i>
-                    
-                </section>
+                </div>
             </div>
 
-            
-        </section>
+            <div class="card">
+                <div class="pt1">
+                    <h1>02</h1>
+                </div>
+                <div class="pt2">
+                    <div class="pt2-content">
+                        <h2>Calcular raiz de 100</h2>
+                        <p>20/07</p>
+                    </div>
+                    <p>Tarefa um foda top amo muito essa trefa</p>
+                </div>
+                <div class="pt3">
+                    <label>
+                        <input type="checkbox" class="option-input checkbox" checked />
+                      </label>
+                    <i class="bi bi-pencil-square"></i>
+                </div>
+            </div>
 
-    </main>
+            <div class="card">
+                <div class="pt1">
+                    <h1>02</h1>
+                </div>
+                <div class="pt2">
+                    <div class="pt2-content">
+                        <h2>Calcular raiz de 100</h2>
+                        <p>20/07</p>
+                    </div>
+                    <p>Tarefa um foda top amo muito essa trefa</p>
+                </div>
+                <div class="pt3">
+                    <input type="checkbox" id="">
+                    <i class="bi bi-pencil-square"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+    <section class="decoration">
+        <img src="../img/post-removebg-preview.png" height="390px" alt="">
+    </section>
+
+
+    <div class="more-task">
+        <i class="bi bi-x-circle-fill"></i>
+        <form>
+           <p>
+                <label for="">Titulo</label>
+                <input type="text">
+           </p>
+           <p>
+                <label for="">Conteudo</label>
+                <input type="text">
+           </p>
+            <p>
+                <label for="">Data de conclusão</label>
+                <input type="text">
+            </p>
+            <p>
+                <button>Concluido</button>
+           </p>
+
+        </form>
+    </div>
 </body>
 </html>

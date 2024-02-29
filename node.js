@@ -6,7 +6,9 @@ async function validarLogin(){
     const senha = document.getElementById('password').value
 
     if(email == '' || senha == ''){
-        alert('Preencha os campos corretamente!!!!!!!!!!!!!1')
+
+        alert('Valores invalidos')
+       
     }else{
         const users = await fetch('http://localhost:8080/usuario')
         const listUsers = await users.json()
@@ -14,7 +16,6 @@ async function validarLogin(){
         listUsers.forEach((user) => {
 
             if (email === user.email && senha === user.senha) {
-                alert('usuario logado com sucesso!!!!!!!!!!!')
                 window.location.href = './pages/home.html'
 
             }
@@ -27,3 +28,5 @@ async function validarLogin(){
 window.onload = () => {
     button.addEventListener('click', validarLogin)
 }
+
+
